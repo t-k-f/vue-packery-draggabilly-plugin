@@ -1,0 +1,30 @@
+{
+  "name": "vue-draggabilly-plugin",
+  "version": "1.0.0",
+  "description": "A Draggabilly vue plugin",
+  "main": "./dist/build.js",
+  "scripts": {
+    "babel": "babel --presets env src/index.js -o dist/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jan-thoma@github.com/t-k-f/vue-draggabilly-plugin.git"
+  },
+  "keywords": [
+    "packery",
+    "vue.js"
+  ],
+  "author": "Jan Thoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-k-f/vue-draggabilly-plugin/issues"
+  },
+  "homepage": "https://github.com/t-k-f/vue-draggabilly-plugin#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.0",
+    "draggabilly": "^2.2.0"
+  }
+}
