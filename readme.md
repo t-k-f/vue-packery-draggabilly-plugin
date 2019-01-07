@@ -21,9 +21,9 @@ Vue.use(VueDraggabillyPlugin)
 ```
 <div v-draggabilly v-packery='{itemSelector: ".packery-item", percentPosition: true}'>
 
-    <div v-packery-item class='packery-item'></div>
-    <div v-packery-item class='packery-item'></div>
-    <div v-packery-item class='packery-item'></div>
+    <div v-draggabilly v-packery-item class='packery-item'></div>
+    <div v-draggabilly v-packery-item class='packery-item'></div>
+    <div v-draggabilly v-packery-item class='packery-item'></div>
 
 </div>
 ```
