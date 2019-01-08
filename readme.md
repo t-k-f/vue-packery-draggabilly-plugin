@@ -1,6 +1,10 @@
-# Vue.js Draggabilly Plugin
+# Vue.js Packery Draggabilly Plugin
 
-A wrapper for the beloved draggabilly(packery) for vue.js
+Addon to support draggabilly for [Vue.js Packery Plugin](https://github.com/t-k-f/vue-packery-plugin)
+
+### Requirements
+
+[Vue.js Packery Plugin](https://github.com/t-k-f/vue-packery-plugin) must be present in project
 
 ### Installing
 
