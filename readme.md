@@ -9,13 +9,13 @@ Addon to support draggabilly for [Vue.js Packery Plugin](https://github.com/t-k-
 ### Installing
 
 ```
-npm install --save vue-draggabilly-plugin
+npm install --save vue-packery-draggabilly-plugin
 ```
 
 then
 
 ```
-import VueDraggabillyPlugin from 'vue-packery-plugin'
+import VueDraggabillyPlugin from 'vue-packery-draggabilly-plugin'
 
 Vue.use(VueDraggabillyPlugin)
 ```
