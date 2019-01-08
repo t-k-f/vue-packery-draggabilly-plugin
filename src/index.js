@@ -13,8 +13,13 @@ draggabillyPlugin.install = function (Vue, options)
     Vue.directive('draggabilly', {
         inserted (el)
         {
-            var draggie = new Draggabilly(el)
+            el.draggie = new Draggabilly(el)
             packeryEvents.$emit('draggie', {draggie: draggie, node: el.parentNode})
+        },
+        unbind (el)
+        {
+            el.draggie.destroy()
+            el.draggie = null
         }
     })
 }
