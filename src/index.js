@@ -11,9 +11,9 @@ export default draggabillyPlugin
 draggabillyPlugin.install = function (Vue, options)
 {
     Vue.directive('draggabilly', {
-        inserted (el)
+        inserted (el, binding)
         {
-            el.draggie = new Draggabilly(el)
+            el.draggie = new Draggabilly(el, binding.value)
             packeryEvents.$emit('draggie', {draggie: draggie, node: el.parentNode})
         },
         unbind (el)
