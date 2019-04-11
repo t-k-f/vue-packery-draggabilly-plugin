@@ -27,7 +27,9 @@ Vue.use(VueDraggabillyPlugin)
 
     <div v-draggabilly v-packery-item class='packery-item'></div>
     <div v-draggabilly v-packery-item class='packery-item'></div>
-    <div v-draggabilly v-packery-item class='packery-item'></div>
+    <div v-draggabilly="{ axis: 'x', containment: true }" v-packery-item class='packery-item'></div>
 
 </div>
 ```
+
+Pass an object with [Draggabilly options](https://draggabilly.desandro.com/) as an argument to the v-draggabilly directive to change the settings.
