@@ -16,6 +16,14 @@ draggabillyPlugin.install = function (Vue, options)
             el.draggie = new Draggabilly(el, binding.value)
             packeryEvents.$emit('draggie', {draggie: el.draggie, node: el.parentNode})
 
+            if (binding.value.hasOwnProperty('disableDraggabilly')) {
+                if (binding.value.disableDraggabilly) {
+                    el.draggie.disable()
+                }
+                else {
+                    el.draggie.enable()
+                }
+            }
         },
         unbind (el)
         {
