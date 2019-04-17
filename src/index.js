@@ -14,7 +14,8 @@ draggabillyPlugin.install = function (Vue, options)
         inserted (el, binding)
         {
             el.draggie = new Draggabilly(el, binding.value)
-            packeryEvents.$emit('draggie', {draggie: draggie, node: el.parentNode})
+            packeryEvents.$emit('draggie', {draggie: el.draggie, node: el.parentNode})
+
         },
         unbind (el)
         {
