@@ -27,9 +27,25 @@ Vue.use(VueDraggabillyPlugin)
 
     <div v-draggabilly v-packery-item class='packery-item'></div>
     <div v-draggabilly v-packery-item class='packery-item'></div>
-    <div v-draggabilly="{ axis: 'x', containment: true }" v-packery-item class='packery-item'></div>
+    <div v-draggabilly v-packery-item class='packery-item'></div>
 
 </div>
 ```
 
+
+#### Options
+
 Pass an object with [Draggabilly options](https://draggabilly.desandro.com/) as an argument to the v-draggabilly directive to change the settings.
+
+Passing along the custom key `disableDraggabilly` with a bool, disables/enables (true/false) the draggabilly instace via the official `draggie.disable()` & `draggie.enable()` methods.
+
+Example usage:
+```
+<div v-draggabilly="{
+    axis: 'x',
+    grid: [ 20, 20 ],
+    handle: '.handle',
+    containment: true,
+    disableDraggabilly: false
+}" v-packery-item class='packery-item'></div>
+```
