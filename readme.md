@@ -1,3 +1,5 @@
+This plugin is no longer maintained, in consideration that packery doesn't play very nice with Vue. Development of a "native" bin packer will continue here => [vue-binpacker-plugin](https://github.com/t-k-f/vue-binpacker-plugin).
+
 # Vue.js Packery Draggabilly Plugin
 
 Addon to support draggabilly for [Vue.js Packery Plugin](https://github.com/t-k-f/vue-packery-plugin)
