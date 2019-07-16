@@ -33,3 +33,22 @@ Vue.use(VueDraggabillyPlugin)
 
 </div>
 ```
+
+
+#### Options
+
+Pass an object with [Draggabilly options](https://draggabilly.desandro.com/) as an argument to the v-draggabilly directive to change the settings.
+
+Passing along the custom key `disableDraggabilly` with a bool, disables/enables (true/false) the draggabilly instace via the official `draggie.disable()` & `draggie.enable()` methods.
+Or the custom key `recalculateOnMove` which updates card position upon drag, good for CSS transformed views.
+
+Example usage:
+```
+<div v-draggabilly="{
+    axis: 'x',
+    grid: [ 20, 20 ],
+    handle: '.handle',
+    containment: true,
+    disableDraggabilly: false
+}" v-packery-item class='packery-item'></div>
+```
